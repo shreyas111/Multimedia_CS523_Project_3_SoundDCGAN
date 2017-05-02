@@ -10,8 +10,9 @@ This repository is created as a deliverable for Project 3 for CS-523 course offe
 In this project we have tried to generate sound from DCGAN using 3 different approaches. Each approach is implemented in a separate interactive python file (ipynb) file. 
 
 ## 3. Running the Project
-1. Download the 3 .ipynb files to the root folder of your jupyter notebook.
-2. To run the Piano_Music_Same.ipynb also download the 'piano' folder into the root directory of jupyter notebook. This notebok describer approach 1 for generating music from Sound DCGAN.
+1. Download and clone the repository
+1. open the .ipynb files to the root folder of your jupyter notebook.
+2. To run the Piano_Music_Same.ipynb also copy the 'piano' folder into the root directory of jupyter notebook. This notebok describes approach 1 for generating music from Sound DCGAN.
 3. To run the drum_beats.ipynb also download the 'drum2beats' folder into the root directory of jupyter notebook and execute the notebook. This notebok describer approach 2 for generating music from Sound DCGAN.
 4. To run the StringBeats.ipynb also download the 'strings' folder into the root directory of jupyter notebook and execute the notebook. This notebok describer approach 3 for generating music from Sound DCGAN.
 
