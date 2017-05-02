@@ -62,7 +62,7 @@ In this project we have tried to generate sound from DCGAN using 3 different app
 1. You can run this drum_beats.ipynb notebook to see the sample outputs the DCGAN generated on drum beats music file. 
 2. All the outputs and data required for running the file and training the DCGAN (training is an optional step) are present in the 'drum2beats' folder. 
 3. All the instructions required for training if the user wants is also present in the drum_beats.ipynb. You can run the ipynb file to see the outputs and do not have to train. 
-4. Youtube Video Link: Will be uploaded Shortly
+4. Youtube Video Link:https://www.youtube.com/watch?v=BEZbTEdwUnQ&feature=youtu.be
 
 ### 5.1 Generating Muisc From Drum Beats Music File.
 1. This method corresponds to Approach 2 in our paper for generating sound from DCGAN.
