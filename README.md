@@ -17,6 +17,8 @@ In this project we have tried to generate sound from DCGAN using 3 different app
 3. Approach 2 for generating music from Sound DCGAN is explained in drum_beats.ipynb
 4. Approach 3 for generating music from Sound DCGAN is explained in StringBeats.ipynb
 
+(Please note: Training the DCGAN is an optional step while running the python notebooks. The process of training the DCGAN is already done and is done through a separate python program and not is not done while running these python notebook. This notebook will expalin the steps to follow to train the DCGAN outside this python notebook). The code used to train the DCGAN is present in the folder 'SoundDCGAN' in which we have implemented a DCGAN model for generating greyscale images. The code written to convert images into tfrecords in present in 'create_tfrecords' folder.
+
 ## Approach 1: Piano_Music_Same.ipynb 
 1. You can run this piano_music.ipynb notebook to see the sample outputs the DCGAN generated on piano music file. 
 2. All the outputs and data required for running the file and training the DCGAN (training is an optional step) are present in the 'Piano' folder. 
