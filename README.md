@@ -22,7 +22,7 @@ In this project we have tried to generate sound from DCGAN using 3 different app
 
 ##### (Please note: Training the DCGAN is an optional step while running the python notebooks. The process of training the DCGAN is already done and is done through a separate python program and not is not done while running these python notebook. This notebook will expalin the steps to follow to train the DCGAN outside this python notebook). The code used to train the DCGAN is present in the folder 'SoundDCGAN' in which we have implemented a DCGAN model for generating greyscale images. The code written to convert images into tfrecords in present in 'create_tfrecords' folder. 
 
-### 3.2 Requirements if you want to train the DCGAN. Code Present in 'SoundDCGAN' folder (Training is optional step and user can follow the instructions in the python notebook's on how to train the DCGAN on the images generated from the sound files. Before training the images have to be converted into TfRecords (All instructions are given in the notebook))
+##### 3.2 Requirements if you want to train the DCGAN. Code Present in 'SoundDCGAN' folder (Training is optional step and user can follow the instructions in the python notebook's on how to train the DCGAN on the images generated from the sound files. Before training the images have to be converted into TfRecords (All instructions are given in the notebook))
 1. python 3.5 or Greater
 2. TensorFlow >= 1.0
 3. appdirs==1.4.3
