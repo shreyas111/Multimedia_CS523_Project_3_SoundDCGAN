@@ -46,7 +46,7 @@ In this project we have tried to generate sound from DCGAN using 3 different app
 1. You can run this piano_music.ipynb notebook to see the sample outputs the DCGAN generated on piano music file. 
 2. All the outputs and data required for running the file and training the DCGAN (training is an optional step) are present in the 'Piano' folder. 
 3. All the instructions required for training if the user wants is also present in the Piano_Music_Same.ipynb. You can run the ipynb file to see the outputs and do not have to train.
-4. Youtube video link: https://www.youtube.com/watch?v=-Bf8nKTJu0o&feature=youtu.be
+4. Youtube video link: https://youtu.be/-Bf8nKTJu0o
 
 ### 4.1 Generating Music From Piano Music File.
 1. This method corresponds to Approach 1 in our paper for generating sound from DCGAN.
