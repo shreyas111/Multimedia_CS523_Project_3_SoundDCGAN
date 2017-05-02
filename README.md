@@ -1,30 +1,52 @@
 # Multimedia_CS523_Project_3_SoundDCGAN
 This repository is created as a deliverable for Project 3 for CS-523 course offered in Spring 2017 at University of Illinois at Chicago.
 
-## Project Members:
-
+## 1. Project Members:
 1. Kruti Sharma
 2. Hengbin Li
 3. Shreyas Kulkarni
 
-# Sound Generation Using Deep Convolutional Generative Adversarial Networks.
+# 2. Sound Generation Using Deep Convolutional Generative Adversarial Networks.
 In this project we have tried to generate sound from DCGAN using 3 different approaches. Each approach is implemented in a separate interactive python file (ipynb) file. 
 
-## Running the Project
+## 3. Running the Project
+1. Download the 3 .ipynb files to the root folder of your jupyter notebook.
+2. To run the Piano_Music_Same.ipynb also download the 'piano' folder into the root directory of jupyter notebook. This notebok describer approach 1 for generating music from Sound DCGAN.
+3. To run the drum_beats.ipynb also download the 'drum2beats' folder into the root directory of jupyter notebook and execute the notebook. This notebok describer approach 2 for generating music from Sound DCGAN.
+4. To run the StringBeats.ipynb also download the 'strings' folder into the root directory of jupyter notebook and execute the notebook. This notebok describer approach 3 for generating music from Sound DCGAN.
 
-1. Run Each .ipynb file to see the outputs we obtained for each approach. All instructions are present in the .ipynb files.
-2. Apporach 1 for generating music from Sound DCGAN is explained in Piano_Music_Same.ipynb
-3. Approach 2 for generating music from Sound DCGAN is explained in drum_beats.ipynb
-4. Approach 3 for generating music from Sound DCGAN is explained in StringBeats.ipynb
+### 3.1 Requirements to Run ipython notebook:
+1. python 3.5 or Greater
+2. Jupyter Notebook.
 
-##### (Please note: Training the DCGAN is an optional step while running the python notebooks. The process of training the DCGAN is already done and is done through a separate python program and not is not done while running these python notebook. This notebook will expalin the steps to follow to train the DCGAN outside this python notebook). The code used to train the DCGAN is present in the folder 'SoundDCGAN' in which we have implemented a DCGAN model for generating greyscale images. The code written to convert images into tfrecords in present in 'create_tfrecords' folder.
+##### (Please note: Training the DCGAN is an optional step while running the python notebooks. The process of training the DCGAN is already done and is done through a separate python program and not is not done while running these python notebook. This notebook will expalin the steps to follow to train the DCGAN outside this python notebook). The code used to train the DCGAN is present in the folder 'SoundDCGAN' in which we have implemented a DCGAN model for generating greyscale images. The code written to convert images into tfrecords in present in 'create_tfrecords' folder. 
 
-## 1.  Approach 1: Piano_Music_Same.ipynb 
+### 3.2 Requirements if you want to train the DCGAN. Code Present in 'SoundDCGAN' folder (Training is optional step and user can follow the instructions in the python notebook's on how to train the DCGAN on the images generated from the sound files. Before training the images have to be converted into TfRecords (All instructions are given in the notebook))
+1. python 3.5 or Greater
+2. TensorFlow >= 1.0
+3. appdirs==1.4.3
+4. click==6.7
+5. Flask==0.12
+6. Flask-SQLAlchemy==2.2
+7. itsdangerous==0.24
+8. Jinja2==2.9.5
+9. MarkupSafe==1.0
+10. numpy==1.12.0
+11. packaging==16.8
+12. protobuf==3.2.0
+13. pyparsing==2.2.0
+14. six==1.10.0
+15. SQLAlchemy==1.1.6
+16. tensorflow==1.0.0
+17. Werkzeug==0.12.1
+
+
+## 4.  Approach 1: Piano_Music_Same.ipynb 
 1. You can run this piano_music.ipynb notebook to see the sample outputs the DCGAN generated on piano music file. 
 2. All the outputs and data required for running the file and training the DCGAN (training is an optional step) are present in the 'Piano' folder. 
 3. All the instructions required for training if the user wants is also present in the Piano_Music_Same.ipynb. You can run the ipynb file to see the outputs and do not have to train.
 
-### 1.1 Generating Muisc From Piano Music File.
+### 4.1 Generating Muisc From Piano Music File.
 1. This method corresponds to Approach 1 in our paper for generating sound from DCGAN.
 2. The Music file used for this approach is piano music data file (sample_music.wav) present in the 'piano' folder.
 3. In this process we are sampling the paino music file into samples of 1 second each and storing each seconds data as a greyscale png image. Since the file is stored at 44100 Hz per second. The size of the image will be 210 x 210.
@@ -34,12 +56,12 @@ In this project we have tried to generate sound from DCGAN using 3 different app
 7. This notebook describes the process used in converting the sample_music.wav file into greyscale images, training a DCGAN eachtime separately with the images of a single second and recovering the sound back from the images generated by the generator in two different ways.
 ##### (Please note: The process of training the DCGAN is done through a separate python program and not is not done in this python notebook. This notebook will expalin the steps to follow to train the DCGAN outside this python notebook). The code used to train the DCGAN is present in the folder 'SoundDCGAN'. We have implemented a DCGAN model for generating greyscale images. The code written to convert images into tfrecords in present in 'create_tfrecords' foleder. 
 
-## 2. Approach 2: drum_beats.ipynb
+## 5. Approach 2: drum_beats.ipynb
 1. You can run this drum_beats.ipynb notebook to see the sample outputs the DCGAN generated on drum beats music file. 
 2. All the outputs and data required for running the file and training the DCGAN (training is an optional step) are present in the 'drum2beats' folder. 
 3. All the instructions required for training if the user wants is also present in the drum_beats.ipynb. You can run the ipynb file to see the outputs and do not have to train. 
 
-### 2.1 Generating Muisc From Drum Beats Music File.
+### 5.1 Generating Muisc From Drum Beats Music File.
 1. This method corresponds to Approach 2 in our paper for generating sound from DCGAN.
 2. The Music file used for this approach is drum beat music data file (drum2.wav). The main reason for using drum beats is because drums produce lower frequency sounds than string instruments and we wanted to understand if the frequency range makes any difference in results of a DCGAN while producing sound.
 3. In this approach the drum2.wav file is spilt into 32 images where each image represents the frequencies in time corresposning to one beat.
@@ -48,12 +70,12 @@ In this project we have tried to generate sound from DCGAN using 3 different app
 
 ##### (Please note: The process of training the DCGAN is done through a separate python program and not is not done in this python notebook. This notebook will expalin the steps to follow to train the DCGAN outside this python notebook). The code used to train the DCGAN is present in the folder 'SoundDCGAN'. We have implemented a DCGAN model for generating greyscale images. The code written to convert images into tfrecords in present in 'create_tfrecords' foleder.
 
-## 3. Approach 3: StringBeats.ipynb
+## 6. Approach 3: StringBeats.ipynb
 1. You can run this StringBeats.ipynb notebook to see the sample outputs the DCGAN generated on drum beats music file. 
 2. All the outputs and data required for running the file and training the DCGAN (training is an optional step) are present in the 'strings' folder. 
 3. All the instructions required for training if the user wants is also present in the StringBeats.ipynb. You can run the ipynb file to see the outputs and do not have to train.
 
-### 3.1 Generating Muisc From String Instrument Music File.
+### 6.1 Generating Muisc From String Instrument Music File.
 
 1. This method corresponds to Approach 3 in our paper for generating sound from DCGAN.
 2. The Music file used for this approach is string instrument music data file (string.wav). The main reason for using string instruments is because string instruments have high frequency sounds and we wanted to understand if the DCGAN's are better at producing sounds of high frequencies.
